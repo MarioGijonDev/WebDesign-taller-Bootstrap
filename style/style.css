@@ -1,0 +1,190 @@
+
+/* CUSTOM PROPIERTIES */
+:root{
+    --first-color: rgb(225, 33, 74);
+    --first-alpha-color: rgba(225, 33, 74, 0.75);
+    --second-color: rgb(22, 72, 121);
+    --second-alpha-color: rgb(20, 25, 45, 0.75);
+    --third-color: rgb(80, 20, 100);
+    --third-alpha-color: rgb(80, 20, 100, 0.75);
+
+    --link-color: rgb(80, 158, 227);
+    --link-alpha-color: rgb(80, 158, 227, 0.75);
+
+    --bg-color: rgb(245, 245, 245);
+    --bg-aplha-color: rgb(245, 245, 245, 0.75);
+}
+
+/* RESET STYLES */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    color: var(--link-color);
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+a:hover{
+    color: var(--first-color);
+}
+
+/* BOOTSTRAP STYLES */
+.bg-dark{
+    background-color: var(--second-color) !important;
+}
+
+.navbar-brand img{
+    height: 3rem;
+    width: auto;
+}
+
+.nav-item{
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.nav-item:hover{
+    background-color: var(--first-alpha-color);
+}
+
+.nav-link{
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-left: .5rem;
+}
+
+.nav-link:hover{
+    color: var(--bs-white);
+}
+
+.navbar-dark .navbar-toggler{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;      
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.navbar-dark .navbar-toggler:hover{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.75;
+}
+
+.dropdown-item{
+    color: var(--first-alpha-color);
+    font-weight: bold;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.dropdown-item:hover{
+    color: var(--third-color);
+    font-weight: bold;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+  
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-caption{
+     z-index: 10;
+}
+  
+
+/* MY STYLES */
+.bg-color{
+    background-color: var(--bg-color);
+}
+
+.bg-alpha-color{
+    background-color: var(--bg-aplha-color);
+}
+
+.bg-second-alpha-color{
+    background-color: var(--second-alpha-color);
+}
+
+.bg-gradient-blue-black{
+    background-color: rgba(83, 184, 152, 1);
+    background-image: linear-gradient(135deg, rgba(47, 145, 224, 0.91), rgba(7, 31, 51, 0.97));
+}
+
+.bg-third-color{
+    background-color: var(--third-color);
+}
+
+.bg-hero-image{
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-first-color{
+    color: var(--first-color);
+}
+
+.text-third{
+    color: var(--third-color);
+}
+
+
+
+
+
+
+
+/* BREAKPOINTS */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .nav-item:hover{
+        background-color: transparent;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
